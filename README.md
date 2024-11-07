@@ -1,2 +1,2 @@
 # intro-to-ultimate
-A website I put together for my school's ultimate frisbee team &lt;3
+A little website I put together for my school's ultimate frisbee team &lt;3
