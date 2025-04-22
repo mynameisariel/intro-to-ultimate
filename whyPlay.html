@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Play</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
+    <button class="hamburger" onclick="openNav()">&#9776;</button>
+
+    <div id="myNav" class="overlay">
+      <span class="closebtn" onclick="closeNav()">&times;</span>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
         <a href="howToPlay.html">How to Play</a>
-        <a class="active" href="whyPlay.html">Why Play?</a>
+        <a href="whyPlay.html">Why Play?</a>
+      </div>
     </div>
 
     <div id="title">
@@ -28,6 +34,32 @@
         </ol>
         </p>
     </div>
+
+    <h2 class="table-title"> <span>the</span> <span>pros</span> <span>and</span> <span>cons</span> <span>of</span> <span>playing</span> <span>ultimate</span> <span>frisbee</span></h2>
+    <table>
+        <tr>
+            <th>PROS</th>
+            <th>CONS</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Instantly gain 10+ new best friends who will slide through mud and dive into grass with you.</li>
+                    <li>Your cardio improves so much you might accidentally outrun your own responsibilities.</li>
+                    <li>Get to yell things like “STACK!” and “FORCE HOME!” in public without anyone thinking you’re casting a spell.</li>
+                    <li>Become a master of physics by calculating the perfect disc curve with nothing but raw vibes and wind intuition.</li>
+                    <li>Dive for discs like a majestic dolphin and feel like an Olympic superhero every time you catch one.</li>
+                    <li>Develop calves that could crush coconuts.</li>
+                </ul>
+            </td>
+            <td>
+                <li>Might miss study time because you’re too euphorically sprinting and laying out for plastic circles.</li>
+                <li>The disc will 100% bonk you in the face at least once, but it builds character (and reflexes).
+                </li>
+                <li>basically none :D</li>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>

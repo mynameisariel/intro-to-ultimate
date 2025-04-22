@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Play</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
+    <button class="hamburger" onclick="openNav()">&#9776;</button>
+
+    <div id="myNav" class="overlay">
+      <span class="closebtn" onclick="closeNav()">&times;</span>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
         <a href="howToPlay.html">How to Play</a>
-        <a class="active" href="whyPlay.html">Why Play?</a>
+        <a href="whyPlay.html">Why Play?</a>
+      </div>
     </div>
 
     <div id="title">

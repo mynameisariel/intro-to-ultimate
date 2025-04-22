@@ -7,6 +7,13 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 .title {
@@ -28,7 +35,7 @@ body {
   font-weight: bold;
 }
 
-.topnav {
+/* .topnav {
   background-color: #ffd152;
   overflow: hidden;
 }
@@ -43,8 +50,83 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ffa047;
   color: white;
+  transition: 0.3s;
+} */
+
+/* Fullscreen overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #ffd152; /* your navbar color */
+  opacity: 90%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Content inside overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  display: block;
+  padding: 20px;
+  font-size: 36px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.overlay .closebtn:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hamburger button */
+.hamburger {
+  font-size: 30px;
+  border: none;
+  color: #ffa047;
+  background-color: white;
+  stroke-width: 3px;
+}
+
+.hamburger:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 p {
@@ -59,11 +141,31 @@ h2 {
 
 img {
   border: 5px solid #ffa047;
-  width: 500px
+  width: 500px;
+}
+
+img:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  /* 10% { transform: translate(-1px, -2px) rotate(-1deg); } */
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  /* 30% { transform: translate(3px, 2px) rotate(0deg); } */
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  /* 50% { transform: translate(-1px, 2px) rotate(-1deg); } */
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  /* 70% { transform: translate(3px, 1px) rotate(-1deg); } */
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  /* 90% { transform: translate(1px, 2px) rotate(0deg); } */
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .flex-container {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .flex-child {
@@ -73,3 +175,70 @@ img {
 .flex-child:first-child {
   margin-right: 20px;
 } 
+
+footer {
+  background-color: #ffd152;
+  padding: 0.5em;
+  justify-content: center;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-title {
+  text-align: center;
+}
+
+.table-title span {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.table-title span:nth-child(1) {
+  animation-delay: 0s;
+}
+.table-title span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.table-title span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.table-title span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.table-title span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.table-title span:nth-child(6) {
+  animation-delay: 1.0s;
+}
+.table-title span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.table-title span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+
+th {
+  background-color: #ffd152;
+}
+
+td, th {
+  border: 3px solid #ffa047;
+  padding: 15px;
+}
