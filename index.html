@@ -4,15 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Merivale Ultimate</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="howToPlay.html">How to Play</a>
-    <a class="active" href="whyPlay.html">Why Play?</a>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
+
+  <div id="myNav" class="overlay">
+    <span class="closebtn" onclick="closeNav()">&times;</span>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="howToPlay.html">How to Play</a>
+      <a href="whyPlay.html">Why Play?</a>
+    </div>
   </div>
 
   <h1 class="home-title">Merivale Ultimate Team 🥏</h1>
@@ -20,16 +27,19 @@
   <div class="flex-container">
     <div class="flex-child text">
       <h2>Hello!</h2>
-      <p>We like chasing flying discs!</p>
+      <p>We like chasing flying discs! Wahoo!</p>
       <p>Our goal this year is to go to High School Nationals for 2025 (UCHSI).</p>
     </div>
 
     <div class="flex-child image">
-      <img src="team.jpg" alt="our team at a tournament!">
+      <img src="images/team.jpg" alt="our team at a tournament!">
     </div>
   </div>
-  
-
 </body>
+
+<footer>
+  <p>made with love by ariel :)</p>
+  <p>2025</a></p>
+</footer>
 
 </html>
